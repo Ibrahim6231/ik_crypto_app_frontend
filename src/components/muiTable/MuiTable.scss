@@ -1,0 +1,17 @@
+#mui-table-custom{
+
+    .image-name-cell{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 10rem;
+        img{
+            width: 2rem;
+            height: auto;
+            margin-right: 1rem;
+        }
+    }
+
+
+
+}

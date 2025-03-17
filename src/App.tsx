@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AppRoutes from './routes/AppRoutes';
+import { Toaster } from 'react-hot-toast';
+import { useAppSelector } from './app/reduxHooks';
+import Loader from './components/loader/Loader';
 
 function App() {
+  const loaderState = useAppSelector((state) => state.loaderState);
+  const { isLoading } = loaderState;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+          {isLoading && <Loader />}
+          <AppRoutes />
+          <Toaster />
     </div>
   );
 }
 
-export default App;
+export default App; //this export is req. in index.tsx file where it will be added in root element

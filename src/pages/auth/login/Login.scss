@@ -1,0 +1,145 @@
+#login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90vh;
+
+    .container {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+
+        .author{
+            font-size: 1rem;
+        }
+
+        .welcome-img {
+            height: 100%;
+            width: 48%;
+
+            img {
+                // width: 22rem;
+                width: 30rem;
+                margin: auto;
+            }
+        }
+
+        .loginForm {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: 1rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                font-weight: 600;
+                // margin: 10px 0 -5px 0;
+                margin: 0.66rem 0 -0.33rem 0;
+            }
+
+            p {
+                margin: 0 0 -1rem 0;
+            }
+
+            img {
+
+                width: 80%;
+            }
+
+            form>div:nth-child(n)>div {
+                margin: 0.5em 0;
+            }
+
+            input {
+                height: 2.75rem;
+                padding: 0;
+                margin: 0;
+                padding-left: 1.25rem;
+            }
+
+            .MuiTextField-root,
+            .fullwidthForm {
+                width: 100%;
+            }
+
+            .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+                border-radius: 0.25rem;
+                margin: 0;
+                padding: 0 0 0 1.25rem;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+            .passwordHeadFunction {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .iconText {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.3rem;
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    cursor: pointer;
+                    color: gray;
+                }
+            }
+
+            .errorText {
+                font-size: 0.75rem;
+                color: red;
+            }
+
+            .loginButton {
+                display: flex;
+                justify-content: center;
+                margin: 20px 0px 0 0px;
+
+            }
+
+            .login-button {
+                width: 100%;
+                height: 3.1rem;
+                border: none;
+                border-radius: 0.25rem;
+                background-color: skyblue;
+                color: white;
+                font-size: 1.15rem;
+                font-weight: 400;
+                cursor: pointer;
+                margin: 10px 0 0 0;
+            }
+
+            .login-button:hover {
+                background-color: blue;
+            }
+
+            .loginDivider {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.66rem;
+                width: 100%;
+                margin: 1.8rem 0 1.25rem 0;
+                font-weight: 400;
+
+                .straighLine {
+                    height: 1px;
+                    background-color: #66666640;
+                    width: calc(50% - 120px);
+                }
+            }
+        }
+
+    }
+}
